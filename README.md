@@ -45,9 +45,7 @@ The portfolio website provides information about Mahmoud's skills, experience, a
 
 ## Portfolio Screenshot
 
-    ```md
     ![Screenshot gif of me going through the website](assets/mj-portfolio.gif)
-    ```
 
 ## Credits
 

@@ -1,57 +1,71 @@
 /* GENERAL */
 
+/* Importing Google Fonts and resetting default styles */
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600&family=Tilt+Warp&display=swap');
-
 
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
     font-family: 'Poppins', sans-serif;
+    background: #002339;
+    color: #fff;
 }
 
+/* Styling for the HTML element to enable smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Styling for paragraphs */
 p {
     color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
 
+/* Adding smooth transitions for links and buttons */
 a, .btn {
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
 
+/* Styling for desktop navigation */
+
+/* Styling for the main navigation container */
 nav, 
 .nav-links {
     display: flex;
 }
 
+/* Styling for the navigation bar */
 nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
 }
 
+/* Styling for the navigation links */
 .nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
+/* Styling for normal links */
 a {
     color: #222222;
     text-decoration: none;
     text-decoration-color: white;
 }
 
+/* Styling for link hover state */
 a:hover {
     color: gray;
     text-decoration: underline;
@@ -59,25 +73,32 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
+/* Styling for the logo */
 .logo {
     font-size: 2rem;
 }
 
+/* Styling for the logo hover state */
 .logo:hover {
     cursor: default;
 }
 
 /* HAMBURGER MENU */
 
+/* Styling for the hamburger menu */
+
+/* Styling for the hidden hamburger navigation on small screens */
 #hamburger-nav {
     display: none;
 }
 
+/* Styling for the hamburger menu container */
 .hamburger-menu {
     position: relative;
     display: inline-block;
 }
 
+/* Styling for the hamburger icon */
 .hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -87,6 +108,7 @@ a:hover {
     cursor: pointer;
 }
 
+/* Styling for the lines in the hamburger icon */
 .hamburger-icon span {
     width: 100%;
     height: 2px;
@@ -94,6 +116,7 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
+/* Styling for the menu links container */
 .menu-links {
     position: absolute;
     top: 100%;
@@ -105,6 +128,7 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
+/* Styling for the menu links */
 .menu-links a {
     display: block;
     padding: 10px;
@@ -115,40 +139,49 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
+/* Styling for list items in menu links */
 .menu-links li {
     list-style: none;
 }
 
+/* Styling for the opened menu links container */
 .menu-links.open {
     max-height: 300px;
 }
 
+/* Styling for the open state of the hamburger icon */
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
+/* Styling for the open state of the hamburger icon */
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
 
+/* Styling for the open state of the hamburger icon */
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
+/* Styling for the hamburger icon animation */
 .hamburger-icon span:first-child {
     transform: none;
 }
 
+/* Styling for the hamburger icon animation */
 .hamburger-icon span:first-child {
     opacity: 1;
 }
 
+/* Styling for the hamburger icon animation */
 .hamburger-icon span:first-child {
     transform: none;
 }
 
 /* SECTIONS */
 
+/* Styling for sections on the page */
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -157,13 +190,16 @@ section {
     min-height: fit-content;
 }
 
+/* Styling for section containers */
 .section-container {
     display: flex;
 }
 
-
 /* PROFILE SECTION */
 
+/* Styling for the profile section */
+
+/* Styling for the profile container */
 #profile {
     display: flex;
     justify-content: center;
@@ -171,6 +207,7 @@ section {
     height: 80vh;
 }
 
+/* Styling for the profile picture container */
 .section__pic-container {
     display: flex;
     height: 400px;
@@ -178,29 +215,35 @@ section {
     margin: auto 0;
 }
 
+/* Styling for text within the profile section */
 .section__text {
     align-self: center;
     text-align: center;
 }
 
+/* Styling for profile section text paragraphs */
 .section__text p {
     font-weight: 600;
 }
 
+/* Styling for profile section text paragraph 1 */
 .section__text__p1 {
     text-align: center;
 }
 
+/* Styling for profile section text paragraph 2 */
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
+/* Styling for profile section title */
 .title {
     font-size: 3rem;
     text-align: center;
 }
 
+/* Styling for social media icons container */
 #socials-container {
     display: flex;
     justify-content: center;
@@ -210,21 +253,25 @@ section {
 
 /* ICONS */
 
+/* Styling for icons */
 .icon {
     cursor: pointer;
     height: 2rem;
     margin-top: 1rem;
-
 }
 
 /* BUTTONS */
 
+/* Styling for buttons */
+
+/* Styling for button container */
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
+/* Styling for buttons */
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
@@ -233,201 +280,11 @@ section {
     border-radius: 2rem;
 }
 
+/* Styling for button with color 1 */
 .btn-color-1, 
 .btn-color-2 {
-    border: rgb(53,53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover, 
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1, 
-.btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: rgb(0, 0, 0)
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255);
-}
-
-.btn-container {
-    gap: 1rem;
-}
-
-/* ABOUT SECTION */
-
-#about {
-    position: relative;
-}
-
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers, 
-.about-details-container {
-    display: flex;
-}
-
-.about-pic {
-    border-radius: 2rem;
-}
-
-.icon-arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-    width: 50px;
-    cursor: pointer;
-}
-
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
-
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-}
-
-/* EXPERIENCE SECTION */
-
-#experience {
-    position: relative;
-}
-
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
-
-.article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
-
-.article .icon {
-    cursor: default;
-}
-
-/*  PROJECTS SECTION */
-
-#projects {
-    position: relative;
-}
-
-.color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-}
-
-.project-img {
-    width: 90%;
-    height: 90%;
-    border-radius: 2rem; /* Apply border-radius to round the corners */
-}
-
-.project-title {
-    margin: 1rem;
-    color: #222222;
-}
-
-.project-btn {
-    color: #222222;
-    border-color: rgb(163, 163, 163);
-}
-
-/* CONTACT */
-
-#contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;   
-}
-
-.contact-info-upper-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.5rem;
-}
-
-.contact-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-}
-
-.contact-info-container p {
-    font-size: larger;
-}
-
-.contact-icon {
-    cursor: default;
-}
-
-/* FOOTER SECTION */
-
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-
-footer {
-    text-align: center;
-}
+/* Styling for button with color 1 on hover */
+.btn-color-1

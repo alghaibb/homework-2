@@ -1,7 +1,5 @@
 # Mahmoud's Portfolio (Homework-02)
 
-# Mahmoud's Portfolio - Homework 02
-
 ## Description
 
 This project is my portfolio, created as a part of Homework 02. It serves as a showcase of my skills, experience, and projects. The portfolio website provides a platform to learn more about my background, explore his projects, and get in touch with him. The primary goals of this project include:
@@ -44,10 +42,11 @@ The portfolio website provides information about Mahmoud's skills, experience, a
 - **Projects:** View a selection of Mahmoud's projects with descriptions and links.
 - **Contact:** Get in touch with Mahmoud through the provided contact form.
 
-**Portfolio Screenshot**
+
+## Portfolio Screenshot
 
     ```md
-    ![alt text](assets/images/mj-portfolio.gif)
+    ![Screenshot gif of me going through the website](assets/mj-portfolio.gif)
     ```
 
 ## Credits

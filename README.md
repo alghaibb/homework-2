@@ -45,7 +45,7 @@ The portfolio website provides information about Mahmoud's skills, experience, a
 
 ## Portfolio Screenshot
 
-    ![Screenshot gif of me going through the website](https://media.giphy.com/media/hSm82Sg1FETWOtQ54D/giphy.gif)
+![Screenshot gif of me going through the website](https://media.giphy.com/media/hSm82Sg1FETWOtQ54D/giphy.gif)
 
 ## Credits
 

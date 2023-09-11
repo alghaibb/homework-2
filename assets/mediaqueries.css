@@ -1,31 +1,40 @@
+/* Media Query for Screens with a Maximum Width of 1400px */
 @media screen and (max-width: 1400px) {
+    /* Adjust the profile section for smaller screens */
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
+    /* Allow flex containers in "about-containers" to wrap on smaller screens */
     .about-containers {
         flex-wrap: wrap;
     }
 }
 
+/* Media Query for Screens with a Maximum Width of 1200px */
 @media screen and (max-width: 1200px) {
+    /* Hide the desktop navigation and display the hamburger menu */
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
     }
+    /* Adjust margins for experience section and related containers */
     #experience, 
     .experience-details-container {
         margin-top: 2rem;
     }
+    /* Change the display property for the profile and section containers */
     #profile,
     .section-container {
         display: block;
     }
+    /* Hide the arrow icons */
     .arrow {
         display: none;
     }
+    /* Adjust the height and margin for sections and related containers */
     section, 
     .section-container {
         height: fit-content;
@@ -33,66 +42,78 @@
     section {
         margin: 0 5%;
     }
+    /* Adjust the size and margin for the section pic containers */
     .section__pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
+    /* Reset margin for about-containers */
     .about-containers {
         margin-top: 0;
     }
 }
 
+/* Media Query for Screens with a Maximum Width of 600px */
 @media screen and (max-width: 600px) {
+    /* Adjust the height of the contact section and footer */
     #contact, 
     footer {
         height: 40vh;
     }
+    /* Adjust the height and margin of the profile section */
     #profile {
         height: 83vh;
         margin-bottom: 0;
     }
+    /* Reduce the font size of article elements */
     article {
         font-size: 1rem;
     }
+    /* Adjust the height and margin of the footer navigation */
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
+    /* Allow flex containers in "about-containers," "contact-info-upper-container," and "btn-container" to wrap */
     .about-containers, 
     .contact-info-upper-container, 
     .btn-container {
         flex-wrap: wrap;
     }
-    .contact-info-container {
-        margin: 0;
-    }
+    /* Reduce the font size of paragraphs within "contact-info-container" and "nav-links" */
     .contact-info-container p, 
     .nav-links li a {
         font-size: 1rem;
     }
+    /* Adjust the font size for the experience sub-title */
     .experience-sub-title {
         font-size: 1.25rem;
     }
+    /* Adjust the font size of the logo */
     .logo {
         font-size: 1.5rem;
     }
+    /* Change the flex direction and alignment of "nav-links" */
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
+    /* Adjust the size and alignment of the section pic containers */
     .section__pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
     }
+    /* Adjust the font size of ".section__text__p2" and ".title" elements */
     .section__text__p2 {
         font-size: 1.25rem;
     }
     .title {
         font-size: 2rem;
     }
+    /* Adjust text alignment within ".text-container" */
     .text-container {
         text-align: justify;
     }
